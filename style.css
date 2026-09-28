@@ -1,0 +1,253 @@
+/* ==========================================================================
+   1. RESET BÁSICO E CONFIGURAÇÕES GERAIS
+   ========================================================================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a920f3;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+}
+
+/* Tipografia dos Títulos */
+h1, h2, h3 {
+    font-family: 'Black Ops One', cursive;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* ==========================================================================
+   2. HEADER & NAVEGAÇÃO (FLEXBOX)
+   ========================================================================== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2196f3;
+    padding: 20px 5%;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #a920f3;
+}
+
+/* ==========================================================================
+   3. SEÇÕES HERO (PRINCIPAL E REDUZIDA)
+   ========================================================================== */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #2196f3;
+    border-bottom: 5px solid #ffffff;
+}
+
+.hero-small {
+    padding: 50px 20px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-tagline, .hero-description {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto 25px auto;
+    font-weight: bold;
+}
+
+.event-info-box {
+    background-color: #a920f3;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 2px solid #ffffff;
+}
+
+.event-date, .event-location {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* ==========================================================================
+   4. BOTÕES E COMPONENTES REUTILIZÁVEIS
+   ========================================================================== */
+.btn-primary, .btn-buy {
+    display: inline-block;
+    background-color: #a920f3;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-family: 'Black Ops One', cursive;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover, .btn-buy:hover {
+    background-color: #ffffff;
+    color: #2196f3;
+}
+
+/* Estrutura Padrão de Seções */
+.section {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.section-text {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   5. CARDS DA PÁGINA INICIAL (INDEX)
+   ========================================================================== */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #2196f3;
+    padding: 30px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Seção de Ingressos */
+.tickets-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.ticket-card {
+    background-color: #2196f3;
+    padding: 40px 30px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.ticket-card.highlight {
+    border: 3px solid #ffffff;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   6. CARDS DE ARTISTAS DA PÁGINA LINE-UP
+   ========================================================================== */
+.lineup-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.artist-card {
+    background-color: #2196f3;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 280px;
+    text-align: left;
+    border: 2px solid #ffffff;
+}
+
+.artist-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.artist-info {
+    padding: 20px;
+}
+
+.artist-name {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.artist-detail {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+}
+
+.artist-detail strong {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/* ==========================================================================
+   7. RODAPÉ (FOOTER)
+   ========================================================================== */
+.footer {
+    background-color: #2196f3;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
